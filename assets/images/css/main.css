@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+    --font-family: 'Mitr', sans-serif;	
+    --color-title: #EC1045;
+    --color-blue: #07ADEF;
+    --color-white: #ffff;
+    --color-fondo:#242424;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:var(--color-fondo) ;
+    font-family: var(--font-family);
+
+}
+
+.image img{
+    position: relative;
+    width: 100%;
+    padding-left: 10px;
+}
+.wrapper {
+    color: var(--color-white);
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    width: 100%;
+    background-color:hsla(346, 87%, 49%, 0.993);
+    position: fixed;
+    z-index: 1000;
+}
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.menu li {
+    list-style: none;
+    font-size: 9px;
+}
+.menu a{
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.menu .active {
+    color: var(--color-white);
+}
+.menu a:hover {
+    border-bottom: 2px solid var(--color-blue);
+    border-radius: 4px;
+}
+
+.name {
+    color: var(--color-white);
+    font-family: var(--font-family);
+    text-align: center;
+    padding-top: 55px;
+    padding-bottom: 25px;
+}
+.name h1 {
+    font-size: 20px;
+}
+.name span {
+    color: var(--color-title);
+}
+
+.main {
+    width: 95vw;
+    height: 25vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    align-items: center;
+}
+.main h1{
+    color: var(--color-white);
+    font-size: 25px;
+
+}
+.main h2 {
+    color: var(--color-white);
+    font-size: 10px;
+}
+.one{
+    color: var(--color-title); 
+}
+.two {
+    color: var(--color-blue);
+}
+.info-content {
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
+/* menu */
+#button {
+    display: none;
+}
+.container {
+    position: fixed;
+    top: 7px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.redes a, .button  label{
+    display: block;
+    text-decoration: none;
+    background: var(--color-title);
+    color: var(--color-white);
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ec104354, 0 0 40px #ec104354, 0 0 80px #ec104354;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+.redes a:hover {
+    background: var(--color-white);
+    color:var(--color-title) ;
+    transform: scale(1.2);
+}
+.redes a {
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.redes li {
+    list-style: none;
+}
+#button:checked~ .redes a{
+    margin-bottom: 6px;
+    opacity: 1;
+    visibility: visible;
+}
+.button label{
+    cursor: pointer;
+    background: #07adef8c;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+#button:checked ~ .button label{
+    transform: rotate(135deg);
+    font-size: 12px;
+    background: var(--color-blue);
+    box-shadow: 0 0 10px #ffffffd8, 0 0 4px #ffffffd8, 0 0 8px #ffffffd8;
+}
+
+/* menu */
+.section-two {
+    padding-bottom: 35px;
+}
+.main-two {
+    width: 95vw;
+    height: 42vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    padding: 0px 10px;
+    align-items: center;
+}
+.two-part {
+    color: var(--color-white);
+    text-align: center;
+    align-items: center;
+}
+.two-part .my {
+    border-bottom: none;
+    font-size: 15px;
+}
+.about h1 {
+    font-size: 15px;
+    color: var(--color-white);
+    align-items: center;
+    text-align: center;
+    border-bottom: 4px solid hsla(346, 87%, 49%, 0.76);
+    border-radius: 4px;
+    transition: 0.2s;
+	animation:BIcolor 6s linear infinite alternate both;
+}
+
+.about {
+    padding: 0px 110px;
+}
+.main-two span{
+    font-size: 9px;
+    color: var(--color-title);
+    border-bottom: 2px solid hsla(346, 87%, 49%, 0.76);
+    border-radius: 2px;
+}
+.introduction {
+    padding-bottom: 10px;
+}
+
+.two-part .one {
+    color: var(--color-blue);
+}
+.main-two p {
+    font-size: 8px;
+}
+.photo img{
+    padding-top: 20px;
+    padding-left: 10px;
+    max-width: 100%;
+}
+.main-four {
+    padding: 30px 20px;
+}
+.main-four h4{
+    color: var(--color-white);
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    border-bottom: 2px solid hsla(346, 100%, 50%, 0.863);
+}
+.cap {
+    align-items: center;
+    text-align: center;
+}
+.cap img {
+    background-color: #2424244b;
+    border-radius: 100%;
+    padding: 3px;
+    width: 25px;
+}
+img {
+	max-width: 100%;
+}
+
+.list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+	gap: 20px;	
+}
+.character {
+	animation: fromLeft 4s;
+	border-radius:20px; 
+  	border:10px solid transparent; 
+  	background:linear-gradient(45deg,#ffffff27,hsla(0, 0%, 100%, 0.151)) border-box; 
+	cursor: pointer;
+}
+.character:hover {
+	transform: scale(1.1);
+	background:linear-gradient(45deg,#3b8f9cee,hsla(346, 87%, 49%, 0.76)) border-box; 
+	
+}
+
+.three-part ul{
+    padding: 30px 0px;
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+    list-style: none;   
+}
+.program a{
+    color: var(--color-title);
+    text-decoration: none;
+    padding: 10px;
+    background: var(--color-white);
+    border-radius: 10%;
+}
+.program a:hover{
+    background: var(--color-title);
+    color:var(--color-white) ;
+    transform: scale(1.2);
+}
+@keyframes BIcolor {
+	30% {
+		border-bottom: 4px solid hsla(197, 94%, 48%, 0.549);
+	}
+    30% {
+        border-bottom: 4px solid hsla(346, 87%, 49%, 0.76);
+		
+	}
+    40% {
+		border-bottom: 4px solid hsla(197, 94%, 48%, 0.829);
+	}
+
+}
+@media screen and (min-width: 600px){
+    
+    .main {
+        height:40vh; 
+    }
+    
+}
+@media screen and (min-width: 800px){
+    
+    .main, .main-two {
+        height:80vh; 
+    }
+    
+}
+@media screen and (min-width: 1024px){
+    .menu li {
+        font-size: 20px;
+    }
+    .redes a, .button  label{
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .name h1,.main h1,  .introduction h2 {
+        font-size: 50px;
+    }
+	.main {
+        padding: 0px 150px;
+        padding-right: 50px;
+        height:70vh;
+    }
+    .main h2,.about h1{
+        font-size: 25px;
+    }
+    .image img{
+        width: 85%;  
+    }
+    .main-two {
+        padding: 0px 60px;
+        width: 100%;
+        height: 100%;
+    }
+    .two-part .my {
+        font-size: 25px;
+    }
+    
+    .main-two span,.main-two p,.main-four h4{
+        font-size: 15px;
+    }
+   
+    .section-two {
+        padding-bottom: 45px;
+        
+    }
+    .cap img {
+        width: 45px;
+    }
+    .list {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 50px;
+    }
+    .main-four {
+        padding-bottom: 90px ;
+    }
+}
