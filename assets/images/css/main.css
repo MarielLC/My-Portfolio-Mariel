@@ -79,7 +79,7 @@ body {
 
 .main {
     width: 95vw;
-    height: 25vh;
+    height: 40vh;
     display: grid;
     grid-template-columns: repeat(2,1fr) ;
     align-items: center;
@@ -103,6 +103,7 @@ body {
     display: grid;
     text-align: center;
     align-items: center;
+    /* border: 1px solid red; */
 }
 
 /* menu */
@@ -165,24 +166,61 @@ body {
 /* menu */
 .section-two {
     padding-bottom: 35px;
+    
 }
 .main-two {
     width: 95vw;
-    height: 42vh;
+    height: 50vh;
     display: grid;
     grid-template-columns: repeat(2,1fr) ;
     padding: 0px 10px;
     align-items: center;
+    /* border: 3px solid rgb(30, 255, 0); */
 }
 .two-part {
     color: var(--color-white);
     text-align: center;
     align-items: center;
+    /* border: 1px solid blue; */
+    padding-bottom: 30px;
 }
+.skills {
+    width: 95vw;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 50px auto auto;
+    padding-left: 50px;
+    font-size: 10px;
+    text-align: left;
+    
+    /* border: 3px solid blue; */
+}
+.skills h3 {
+    align-items: center;
+    text-align: center;
+    color: var(--color-blue);
+    font-size: 15px;
+    transform: rotate(-90deg);
+    /* border: 1px solid green; */
+ 
+}
+.skills ul {
+    list-style: none; 
+    color: var(--color-white);
+    /* border: 2px solid white; */
+    }
+    .skills li::before { 
+    content: "\2022"; 
+    padding-right: 10px;
+    color: var(--color-blue); 
+    }
+
+/* new */
 .two-part .my {
     border-bottom: none;
     font-size: 15px;
 }
+
 .about h1 {
     font-size: 15px;
     color: var(--color-white);
@@ -198,7 +236,7 @@ body {
     padding: 0px 110px;
 }
 .main-two span{
-    font-size: 9px;
+    font-size: 10px;
     color: var(--color-title);
     border-bottom: 2px solid hsla(346, 87%, 49%, 0.76);
     border-radius: 2px;
@@ -211,8 +249,17 @@ body {
     color: var(--color-blue);
 }
 .main-two p {
-    font-size: 8px;
+    font-size: 10px;
 }
+/* new */
+.two-part h3{
+    font-size: 15px;
+    color: var(--color-blue);
+    padding-top: 20px;
+    /* border: 1px solid white; */
+}
+
+/* new */
 .photo img{
     padding-top: 20px;
     padding-left: 10px;
@@ -299,6 +346,10 @@ img {
     .main {
         height:40vh; 
     }
+    .skills{
+        padding-left: 120px;
+    }
+    
     
 }
 @media screen and (min-width: 800px){
@@ -306,7 +357,30 @@ img {
     .main, .main-two {
         height:80vh; 
     }
+   
+    .name h1,.main h1,  .introduction h2 {
+        font-size: 50px;
+    }
+    .main h2,.about h1, .skills h3{
+        font-size: 25px;
+    }
+    .two-part .my {
+        font-size: 35px;
+    }
+    .two-part p, .two-part span, .skills ul{
+        font-size: 15px;
+    }
+    .skills {
+      
+        grid-template-columns: 150px auto auto;
+        padding-left: 100px;
     
+    }
+
+   
+   
+
+
 }
 @media screen and (min-width: 1024px){
     .menu li {
@@ -325,7 +399,7 @@ img {
         padding-right: 50px;
         height:70vh;
     }
-    .main h2,.about h1{
+    .main h2,.about h1 {
         font-size: 25px;
     }
     .image img{
@@ -356,6 +430,41 @@ img {
         gap: 50px;
     }
     .main-four {
-        padding-bottom: 90px ;
+        padding: 50px 40px 90px 40px;
+        width: 98vw;
     }
+    .skills {
+        height: 40vh;
+        align-items:center;
+       
+       
+    }
+    .skills h3 {
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+    .name h1,.main h1,  .introduction h2 {
+        font-size: 70px;
+    }
+    .main-two span,.main-two p,.main-four h4, .skills li {
+        font-size: 25px;
+    }
+    .two-part .my {
+        font-size: 35px;
+    }
+
+    .skills {
+        height: 60vh;
+        padding-top: 100px;
+        grid-template-columns: 300px 300px 300px;
+       padding: 100px 200px;
+    }
+    .skills h3{
+        font-size: 40px;
+    }
+
 }
