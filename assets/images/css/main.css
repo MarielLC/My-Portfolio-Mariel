@@ -184,14 +184,18 @@ body {
     /* border: 1px solid blue; */
     padding-bottom: 30px;
 }
+
+
+
 .skills {
-    width: 95vw;
-    height: 20vh;
+    /* width: 95vw; */
+    height: 15vh;
+    align-items: center;
     display: grid;
-    grid-template-columns: 50px auto auto;
-    padding-left: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 0px 15px;
     font-size: 10px;
-    text-align: left;
+    justify-content: space-evenly;
     
     /* border: 3px solid blue; */
 }
@@ -209,7 +213,7 @@ body {
     color: var(--color-white);
     /* border: 2px solid white; */
     }
-    .skills li::before { 
+.skills li::before { 
     content: "\2022"; 
     padding-right: 10px;
     color: var(--color-blue); 
@@ -345,11 +349,12 @@ img {
     
     .main {
         height:40vh; 
-    }
-    .skills{
-        padding-left: 120px;
-    }
+    } 
     
+    .skills h3 {
+        width: 100px;
+        
+    }
     
 }
 @media screen and (min-width: 800px){
@@ -370,12 +375,7 @@ img {
     .two-part p, .two-part span, .skills ul{
         font-size: 15px;
     }
-    .skills {
-      
-        grid-template-columns: 150px auto auto;
-        padding-left: 100px;
     
-    }
 
    
    
@@ -434,10 +434,7 @@ img {
         width: 98vw;
     }
     .skills {
-        height: 40vh;
-        align-items:center;
-       
-       
+        height: 50vh;     
     }
     .skills h3 {
         font-size: 30px;
@@ -457,14 +454,9 @@ img {
         font-size: 35px;
     }
 
-    .skills {
-        height: 60vh;
-        padding-top: 100px;
-        grid-template-columns: 300px 300px 300px;
-       padding: 100px 200px;
-    }
+    
     .skills h3{
-        font-size: 40px;
+        font-size: 40px; 
     }
 
 }
